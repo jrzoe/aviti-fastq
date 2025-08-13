@@ -1,0 +1,32 @@
+######## SECTION YOU LIKELY NEED TO EDIT ########
+
+#### Path to sample sheet (CSV format) ####
+samples: ../sample_metadata.csv
+
+#### Directory hosting raw sequencing runs ####
+# This is the directory that contains the raw sequencing run data, with run
+# \ subdirectories corresponding to those specified in the sample metadata
+sequencer_dir: <path/to/dir>
+
+#### Directory for storing processed AVITI run data ####
+# Once fastqs are moved, the run folders here will still contain small files 
+# \ with QC information for the entire run
+run_output_dir: <path/to/dir> 
+
+#### Root output directory for fastqs ####
+data_dir: <path/to/dir>
+
+#### Metadata columns used to generate output subdirectories ####
+# Order will reflect the order in which subdirectories are created within
+# \ the root output directory. Must match metadata column names exactly!
+metadata_columns:
+  - cell_line_mod
+  - experiment_name
+
+######## LESS LIKELY TO EDIT ########
+
+#### Extra bases2fastq parameters ####
+# Provide as a single string
+
+# The following can be used to adjust filter masking for a given run
+# bases2fastq_params: "--filter-mask I1:N5Y6N*"
