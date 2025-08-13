@@ -3,7 +3,7 @@ bases2fastq_params = config.get("bases2fastq_params", "")
 rule create_fastq:
     input:
         # get run directory from thincseq
-        "{sequencer_dir}/{run}"
+        f"{config['sequencer_dir']}/{{run}}"
     output:
         # the resulting fastq files in the output directory
         directory("{run_output_dir}/{run}")
