@@ -1,7 +1,7 @@
 ######## SECTION YOU LIKELY NEED TO EDIT ########
 
-#### Path to sample sheet (CSV format) ####
-samples: ../sample_metadata.csv
+#### Path to sample sheet (CSV format), either relative to smk dir or full ####
+samples: sample_metadata.csv
 
 #### Directory hosting raw sequencing runs ####
 # This is the directory that contains the raw sequencing run data, with run
