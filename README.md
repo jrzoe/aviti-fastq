@@ -24,7 +24,7 @@ Configuration parameters can also be specified at the command line (e.g. `--conf
 
 ### Setting up environment
 
-To run on an HPC using Slurm, one can run the pipeline within either an interactive session (ideally running within a tmux session) or via job submission. Snakemake itself is lightweight and submits all jobs to compute nodes; running it within an interactive session is fine and makes it easy to check on progress. One will need a conda environment with three packages: `snakemake`, `snakemake-executor-plugin-slurm`, `snakedeploy` and `snakemake-wrapper-utils`. This environment can be created with:
+To run on an HPC using Slurm, one can run the pipeline within either an interactive session (ideally running within a tmux window) or via job submission. Snakemake itself is lightweight and submits all jobs to compute nodes; running it within an interactive session is fine and makes it easy to check on progress. While the author of the Slurm plugin recommends running from the head node, not all clusters allow this. One will need a conda environment with four packages: `snakemake`, `snakemake-executor-plugin-slurm`, `snakedeploy` and `snakemake-wrapper-utils`. This environment can be created with:
 
 ```bash
 conda create -n snakemake -c bioconda snakemake snakemake-executor-plugin-slurm snakedeploy snakemake-wrapper-utils
@@ -37,7 +37,7 @@ If your HPC has a particularly outdated `conda` version installed for all users,
 Deploy this pipeline into the output data directory specified within the `config.yaml` file, within a subdirectory called `snakemake`. For example, you would navigate to `/path/to/config_data_dir/snakemake`, then use `snakedeploy` to deploy the pipeline and keep it associated with the data it will process. Be sure to specify the version number being used, for example:
 
 ```bash
-snakedeploy deploy-workflow --tag <version_number> repo dest 
+snakedeploy deploy-workflow --tag <version_number> https://github.com/jrzoe/aviti-fastq.git <dest-dir> 
 ```
 
 ### Profiles
