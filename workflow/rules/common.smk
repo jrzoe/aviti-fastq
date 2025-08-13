@@ -15,7 +15,6 @@ seq_run_names = samples["seq_run_name"].unique().tolist()
 wildcard_constraints:
     sample="|".join(samples["sample_basename"]),
     run="|".join(seq_run_names),
-    sequencer_dir=config["sequencer_dir"],
     run_output_dir=config["run_output_dir"]
 
 # Base final output directory for fastqs
