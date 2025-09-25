@@ -1,0 +1,13 @@
+sample_basename,sample_display_name,cell_line,cell_line_mod,clone,experiment_name,compound_1_name,compound_1_dosage_value,compound_1_dosage_unit,compound_1_time_value,compound_1_time_unit,replicate,seq_run_name,seq_replicate,library_prep_kit,sequencer,strand_specific,UMI,index_number,index_1_ID,index_1_sequence,index_2_ID,index_2_sequence,adapter_r1,adapter_r2,qc_fail
+JZ1,iTAG_geneX_CC220_0nM_1,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,0,nM,4,hr,1,run_dir1,A,,,,,,,,,,,,
+JZ2,iTAG_geneX_CC220_0nM_2,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,0,nM,4,hr,2,run_dir1,A,,,,,,,,,,,,
+JZ3,iTAG_geneX_CC220_0nM_3,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,0,nM,4,hr,3,run_dir1,A,,,,,,,,,,,,
+JZ4,iTAG_geneX_CC220_500nM_1,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,500,nM,4,hr,1,run_dir1,A,,,,,,,,,,,,
+JZ5,iTAG_geneX_CC220_500nM_2,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,500,nM,4,hr,2,run_dir1,A,,,,,,,,,,,,
+JZ6,iTAG_geneX_CC220_500nM_3,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,500,nM,4,hr,3,run_dir1,A,,,,,,,,,,,,
+JZ1,iTAG_geneX_CC220_0nM_1,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,0,nM,4,hr,1,run_dir2,B,,,,,,,,,,,,
+JZ2,iTAG_geneX_CC220_0nM_2,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,0,nM,4,hr,2,run_dir2,B,,,,,,,,,,,,
+JZ3,iTAG_geneX_CC220_0nM_3,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,0,nM,4,hr,3,run_dir2,B,,,,,,,,,,,,
+JZ4,iTAG_geneX_CC220_500nM_1,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,500,nM,4,hr,1,run_dir2,B,,,,,,,,,,,,
+JZ5,iTAG_geneX_CC220_500nM_2,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,500,nM,4,hr,2,run_dir2,B,,,,,,,,,,,,
+JZ6,iTAG_geneX_CC220_500nM_3,lineX_Cas9,iTAG_geneX,2,rna_seq,CC220,500,nM,4,hr,3,run_dir2,B,,,,,,,,,,,,

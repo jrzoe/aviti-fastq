@@ -1,0 +1,20 @@
+executor: slurm
+latency-wait: 60
+jobs: 100
+
+# default resources for all jobs
+default-resources:
+  tasks: 1
+
+# job-specific resources
+set-resources:
+  create_fastq:
+    mem_mb: 50000
+    cpus_per_task: 8
+    runtime: 420
+    slurm_extra: "'--partition=short,torus'"
+  move_fastq:
+    mem_mb: 500
+    cpus_per_task: 1
+    runtime: 30
+    slurm_extra: "'--partition=short'"
